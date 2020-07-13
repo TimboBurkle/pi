@@ -13,9 +13,10 @@ Unity WebGL Player | Warlord
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function() {console.log( "ready!" );});
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Desktop.json", {onProgress: UnityProgress});
+        $(document).ready(function(){alert("timbo");});
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Desktop.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -24,7 +25,7 @@ Unity WebGL Player | Warlord
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">B</div>
+        <div class="title">C</div>
       </div>
     </div>
   </body>
